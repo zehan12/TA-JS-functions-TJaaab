@@ -111,11 +111,15 @@ isLeapYear()
 
 function getFactorial(){
 
-  let number = prompt(`Enter a number`);
+  let n = prompt('enter the no.');
+  
+  let c = Number(n)
 
-  if( number == 0 || number == 1){
-   
-  alert(`The factorial of [number] is [factorial]`)
+  for(i = 1 ; i < n ; i = i + 1 ){
+
+    c = c * i 
+  
+  } alert(`The factorial of ${n} is ${c}!`);
   }
-
-}
+  
+  getFactorial()
